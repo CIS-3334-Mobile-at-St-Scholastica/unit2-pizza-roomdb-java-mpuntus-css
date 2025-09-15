@@ -1,9 +1,15 @@
 package cis3334.java_pizzaorderstart;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 /***
  *  Details for a single pizza
  */
+
+@Entity
 public class Pizza {
+    @PrimaryKey(autoGenerate = true)
+    public int id;
     final Double[] PIZZA_PRICES = {7.99, 9.99, 12.99, 14.99};
     final String[] PIZZA_SIZES = {"Small","Medium","Large","X-Large"};
 
